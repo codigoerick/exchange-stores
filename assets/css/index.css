@@ -1,0 +1,274 @@
+:root {
+   --bg-body-color: rgba(23, 28, 49);
+   --primary-color-text: #f4f4f4;
+   --bg-card-color: rgba(40, 48, 70);
+   --bg-header-color: rgb(22, 22, 22);
+   --btn-color-regular-challenge: crimson;
+   --btn-color-op-retreat: blueviolet;
+   --btn-clan-store: orange;
+   --btn-event-store: rgba(40, 48, 70);
+   --btn-level: rgba(40, 48, 70);
+   /* Nueva variable para el color de resaltado */
+   --active-highlight-color: #4CAF50;
+   /* Un verde vibrante para el borde activo */
+}
+
+body {
+   background-color: var(--bg-body-color);
+   color: var(--primary-color-text);
+   font-family: "alibaba-puhuiti", sans-serif;
+   font-weight: 400;
+}
+
+/* card styles */
+
+.card_container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   column-gap: 1rem;
+   row-gap: 1rem;
+   padding: 0 1rem;
+   /* Add padding to container so cards don't touch edges on small screens */
+   justify-items: center;
+   /* Center items if they don't fill the row */
+}
+
+.item_card {
+   background-color: var(--bg-card-color);
+   text-align: center;
+   width: 100%;
+   /* Make card fill its grid cell */
+   max-width: 350px;
+   /* Prevent cards from getting too huge on large screens with few items */
+   border-radius: 5px;
+   /* Bordes redondeados para las tarjetas */
+   overflow: hidden;
+   /* Asegura que el título no sobresalga */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.item_title {
+   width: 100%;
+   background-color: var(--bg-header-color);
+   height: 4.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.item_title h3 {
+   font-size: 1rem;
+   margin: 0;
+   /* Elimina el margen por defecto */
+   padding: 10px;
+}
+
+.item_container {
+   margin-bottom: 0.3rem;
+   padding: 0 10px;
+}
+
+.item {
+   margin: 15px 0;
+}
+
+.item_icon {
+   width: 60px;
+   height: 60px;
+   /* Asegura una altura fija */
+   object-fit: contain;
+}
+
+.multiplier {
+   font-size: 1.5rem;
+   font-weight: bold;
+   margin-top: 5px;
+}
+
+.chances_left {
+   display: block;
+   /* Asegura que ocupe su propia línea */
+   font-size: 1.2rem;
+   /* Ligeramente más pequeño */
+   font-weight: 900;
+   color: var(--primary-color-text);
+   margin-bottom: 1rem;
+   /* Un color más suave */
+}
+
+.cost_items {
+   margin-bottom: 1rem;
+   padding-bottom: 10px;
+}
+
+.price_item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+   /* Reducido el gap */
+}
+
+.coin_icon {
+   width: 35px;
+   /* Ligeramente más pequeño */
+   height: 35px;
+   object-fit: contain;
+}
+
+.cost_multiplier {
+   font-size: 1.2rem;
+   font-weight: 900;
+}
+
+/* Shop Navigation */
+.shop_nav {
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+   margin: 20px 0;
+   flex-wrap: wrap;
+   /* Allow buttons to wrap on very small screens */
+   padding: 0 10px;
+}
+
+.nav_btn {
+   padding: 10px 20px;
+   border: none;
+   background-color: #333;
+   color: #fff;
+   cursor: pointer;
+   border-radius: 5px;
+   font-size: 1rem;
+   transition: background-color 0.3s;
+}
+
+.nav_btn:hover {
+   background-color: #555;
+}
+
+.nav_btn.active {
+   background-color: var(--active-highlight-color);
+   /* Green highlight */
+   font-weight: bold;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+   .card_container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      /* Allow 2 columns on mobile if possible, or 1 if very small */
+   }
+
+   .item_card {
+      max-width: none;
+      /* Let them fill the space */
+   }
+
+   .item_title h3 {
+      font-size: 0.9rem;
+      /* Slightly smaller text on mobile */
+   }
+
+   .item_icon {
+      width: 50px;
+      height: 50px;
+   }
+}
+
+/* Sub Navigation */
+.sub_nav {
+   margin-top: 10px;
+   gap: 10px;
+   /* Always visible, so no display:none needed here unless strictly required by logic, 
+       but user requested them to remain visible. */
+}
+
+.sub_btn {
+   font-size: 0.9rem;
+   padding: 8px 15px;
+   background-color: #444;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+
+.sub_btn:disabled,
+.sub_btn.disabled {
+   opacity: 0.5;
+   cursor: not-allowed;
+   background-color: #222;
+   color: #777;
+   pointer-events: none;
+   /* Prevent clicks */
+}
+
+.sub_btn.active {
+   background-color: var(--btn-clan-store);
+   /* Orange for active clan sub-tab */
+}
+
+/* Hidden Utility - Keeping it generic just in case, but sub-nav won't use it anymore */
+.hidden {
+   display: none !important;
+}
+
+/* Event Countdown Timer */
+.event_countdown {
+   text-align: center;
+   margin: 15px auto;
+   padding: 10px;
+}
+
+.countdown_label {
+   font-size: 1rem;
+   font-weight: normal;
+   margin-bottom: 8px;
+   color: var(--primary-color-text);
+}
+
+.countdown_timer {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+}
+
+.time_unit {
+   display: flex;
+   align-items: center;
+   gap: 3px;
+}
+
+.time_value {
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: var(--primary-color-text);
+}
+
+.time_label {
+   font-size: 1rem;
+   color: var(--primary-color-text);
+}
+
+/* Responsive adjustments for countdown */
+@media (max-width: 480px) {
+   .event_countdown {
+      padding: 8px;
+      margin: 10px;
+   }
+
+   .countdown_label {
+      font-size: 0.9rem;
+   }
+
+   .countdown_timer {
+      gap: 8px;
+   }
+
+   .time_value {
+      font-size: 1rem;
+   }
+
+   .time_label {
+      font-size: 0.9rem;
+   }
+}

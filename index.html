@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Intercambios</title>
+
+   <link rel="stylesheet" href="assets/css/reset.css">
+   <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+
+   <div class="shop_nav">
+      <button class="nav_btn active" data-category="current_event">Evento actual</button>
+      <button class="nav_btn" data-category="regular_challenge">Desafío Habitual</button>
+      <button class="nav_btn" data-category="op_retreat">Operación de retirada</button>
+      <button class="nav_btn" data-category="clan_store">Tienda de clan</button>
+   </div>
+
+   <div class="shop_nav sub_nav" id="clan-sub-nav">
+      <button class="nav_btn sub_btn active" data-category="clan_lvl_15">Lv 15</button>
+      <button class="nav_btn sub_btn" data-category="clan_lvl_14">Lv 14</button>
+      <button class="nav_btn sub_btn" data-category="clan_lvl_13">Lv 13</button>
+      <button class="nav_btn sub_btn" data-category="clan_lvl_12">Lv 12</button>
+      <button class="nav_btn sub_btn" data-category="clan_lvl_1_11">Lv 1-11</button>
+   </div>
+
+   <!-- Event Countdown Timer -->
+   <div class="event_countdown hidden" id="event-countdown">
+      <div class="countdown_label">Evento termina en:</div>
+      <div class="countdown_timer" id="countdown-display">
+         <span class="time_unit"><span class="time_value" id="days">00</span><span class="time_label">d</span></span>
+         <span class="time_unit"><span class="time_value" id="hours">00</span><span class="time_label">h</span></span>
+         <span class="time_unit"><span class="time_value" id="minutes">00</span><span class="time_label">m</span></span>
+         <span class="time_unit"><span class="time_value" id="seconds">00</span><span class="time_label">s</span></span>
+      </div>
+   </div>
+
+   <div class="card_container" id="shop-container">
+      <!-- Items will be rendered here -->
+   </div>
+
+   <script src="assets/js/events.js"></script>
+   <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
