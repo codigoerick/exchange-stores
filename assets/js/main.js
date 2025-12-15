@@ -1232,29 +1232,38 @@ function hideCountdown() {
 function switchToNextEvent() {
    if (typeof eventData === 'undefined') return;
 
-   // Move next_event to current_event
-   eventData.current_event = eventData.next_event;
+   // LÓGICA DE COLA DE EVENTOS:
+   // 1. Verificar si hay eventos en la cola "upcoming_events"
+   if (eventData.upcoming_events && eventData.upcoming_events.length > 0) {
+      // 2. Tomar el PRIMER evento de la lista (el más próximo) y moverlo a current_event
+      const nextEvent = eventData.upcoming_events.shift(); // Saca el primer elemento
+      eventData.current_event = nextEvent;
 
-   // Clear next_event (user will need to update this manually)
-   eventData.next_event = {
-      "endTime": "2099-12-31T23:59:59Z",
-      "items": [
-         {
-            "title": "No hay próximo evento programado",
-            "icon": "/images/items/collection_choose_11.png",
-            "multiplier": "x1",
-            "chances": "N/A",
-            "coin_icon": "/images/icons/exchange_302.png",
-            "cost": "x 0",
-         }
-      ]
-   };
+      console.log("¡Evento cambiado! Nuevo evento:", nextEvent.title || "Sin título");
 
-   // Re-render if we're on the event page
+   } else {
+      // 3. Si NO hay más eventos en la cola, poner un placeholder
+      eventData.current_event = {
+         "endTime": "2099-12-31T23:59:59Z",
+         "items": [
+            {
+               "title": "No hay más eventos programados",
+               "icon": "assets/images/shop-items/collection_choose_11.png",
+               "multiplier": "x1",
+               "chances": "N/A",
+               "coin_icon": "assets/images/icons/exchange_302.png",
+               "cost": "x 0",
+            }
+         ]
+      };
+      console.log("No hay más eventos próximos. Mostrando placeholder.");
+   }
+
+   // 4. Re-renderizar si estamos en la página del evento
    const activeBtn = document.querySelector('.shop_nav:not(.sub_nav) .nav_btn.active');
    if (activeBtn && activeBtn.getAttribute('data-category') === 'current_event') {
       renderShop('current_event');
-      startCountdown(); // Restart countdown with new event
+      startCountdown(); // Reiniciar contador con la nueva fecha
    }
 }
 
