@@ -147,13 +147,181 @@ const eventData = {
          "endTime": "2025-12-26T15:59:59Z",
          "items": [
             {
-               "title": "Cofre de ejemplo (Evento Futuro 1)",
-               "icon": "assets/images/shop-items/collection_choose_11.png",
+               "title": "Rebobinador espacial",
+               "icon": "assets/images/shop-items/legend_collectible.png",
                "multiplier": "x1",
                "chances": "1 restante",
-               "coin_icon": "assets/images/events/08122025/coin-event.png",
-               "cost": "x 100"
-            }
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 42.000"
+            },
+            {
+               "title": "Paquete de elección de pieza épica",
+               "icon": "assets/images/shop-items/accessory_choose_7.png",
+               "multiplier": "x1",
+               "chances": "6 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 22.500"
+            },
+            {
+               "title": "Paquete de elección de pieza ofensiva épica",
+               "icon": "assets/images/shop-items/accessory_choose_atk_7.png",
+               "multiplier": "x1",
+               "chances": "8 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 21.000"
+            },
+            {
+               "title": "Paquete de elección de pieza defensiva épica",
+               "icon": "assets/images/shop-items/accessory_choose_def_7.png",
+               "multiplier": "x1",
+               "chances": "8 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 21.000"
+            },
+            {
+               "title": "Paquete de cofre de coleccionable épico",
+               "icon": "assets/images/shop-items/collection_choose_7.png",
+               "multiplier": "x1",
+               "chances": "4 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 17.500"
+            },
+            {
+               "title": "Caja de piezas excelente",
+               "icon": "assets/images/shop-items/accessory_drop.png",
+               "multiplier": "x1",
+               "chances": "8 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 14.500"
+            },
+            {
+               "title": "Cofre de coleccionable épico",
+               "icon": "assets/images/shop-items/collection_drop_7.png",
+               "multiplier": "x1",
+               "chances": "6 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 11.000"
+            },
+            {
+               "title": "Invitación para fiesta",
+               "icon": "assets/images/shop-items/item_partyInviteTicket.png",
+               "multiplier": "x1",
+               "chances": "2 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 72.000"
+            },
+            {
+               "title": "Tarjeta de invitado a fiesta",
+               "icon": "assets/images/shop-items/partyGuestTicket.png",
+               "multiplier": "x1",
+               "chances": "2 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 11.000"
+            },
+            {
+               "title": "Gafas Alpinas para Joey",
+               "icon": "assets/images/events/20122025/Head_5100.png",
+               "multiplier": "x1",
+               "chances": "1 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 6700"
+            },
+            {
+               "title": "Traje de esquí alpino para Joey",
+               "icon": "assets/images/events/20122025/Body_5200.png",
+               "multiplier": "x1",
+               "chances": "1 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 6700"
+            },
+            {
+               "title": "Esquí alpino para Joey",
+               "icon": "assets/images/events/20122025/Accessory_5300.png",
+               "multiplier": "x1",
+               "chances": "1 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 6700"
+            },
+            {
+               "title": "Gafas Alpinas para Master Yang",
+               "icon": "assets/images/events/20122025/Head_5101.png",
+               "multiplier": "x1",
+               "chances": "1 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 6700"
+            },
+            {
+               "title": "Abrigo alpino para Master Yang",
+               "icon": "assets/images/events/20122025/Body_5201.png",
+               "multiplier": "x1",
+               "chances": "1 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 6700"
+            },
+            {
+               "title": "Mochila alpina para Master Yang",
+               "icon": "assets/images/events/20122025/Accessory_5301.png",
+               "multiplier": "x1",
+               "chances": "1 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 6700"
+            },
+            {
+               "title": "Omnifragmento de superviviente SP",
+               "icon": "assets/images/shop-items/Frag_21.png",
+               "multiplier": "x1",
+               "chances": "5 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 1100"
+            },
+            {
+               "title": "Caja de piezas aleatorias",
+               "icon": "assets/images/shop-items/accessory_drop3.png",
+               "multiplier": "x1",
+               "chances": "30 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 1000"
+            },
+            {
+               "title": "Llave de cofre de coleccionable",
+               "icon": "assets/images/shop-items/CollectionKey.png",
+               "multiplier": "x1",
+               "chances": "35 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 665"
+            },
+            {
+               "title": "Llave de caja de piezas",
+               "icon": "assets/images/shop-items/AccessoryKey.png",
+               "multiplier": "x1",
+               "chances": "35 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 665"
+            },
+            {
+               "title": "Esencia de energía",
+               "icon": "assets/images/shop-items/Hero_Exp.png",
+               "multiplier": "x600",
+               "chances": "30 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 335"
+            },
+            {
+               "title": "Galletas de mascota",
+               "icon": "assets/images/shop-items/PetCookie.png",
+               "multiplier": "x600",
+               "chances": "30 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 265"
+            },
+            {
+               "title": "Billete de operaciones especiales",
+               "icon": "assets/images/shop-items/SpecialOpsTicket.png",
+               "multiplier": "x5",
+               "chances": "10 restante",
+               "coin_icon": "assets/images/events/20122025/token.png",
+               "cost": "x 110"
+            },
          ]
       },
       {
