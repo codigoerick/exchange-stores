@@ -1,7 +1,7 @@
 // --- DATOS DE EVENTOS ---
 const eventData = {
    "current_event": {
-      "endTime": "2025-12-19T15:59:59Z", // Evento actual hasta el 19 Dic
+      "endTime": "2025-12-20T15:59:59Z", // Se extiende un día para mantener la tienda abierta
       "items": [
          {
             "title": "Paquete de elección de equipo excelente de grado S",
