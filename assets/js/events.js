@@ -329,13 +329,101 @@ const eventData = {
          "endTime": "2026-01-02T15:59:59Z",
          "items": [
             {
-               "title": "Cofre de ejemplo (Evento Futuro 2)",
-               "icon": "assets/images/shop-items/pet_choose_7.png",
-               "multiplier": "x1",
+               "title": "Fishing Lure",
+               "icon": "assets/images/events/26122025/icon_fishbait.png",
+               "multiplier": "x10",
                "chances": "1 restante",
-               "coin_icon": "assets/images/events/08122025/coin-event.png",
+               "coin_icon": "assets/images/events/26122025/icon_fishline.png",
+               "cost": "x 1"
+            },
+            {
+               "title": "Fishing Lure",
+               "icon": "assets/images/events/26122025/icon_fishbait.png",
+               "multiplier": "x5",
+               "chances": "4 restante",
+               "coin_icon": "assets/images/events/26122025/icon_fishpoint.png",
                "cost": "x 200"
-            }
+            },
+            {
+               "title": "Caja de mascota bueno",
+               "icon": "assets/images/shop-items/pet_drop_0.png",
+               "multiplier": "x1",
+               "chances": "15 restante",
+               "coin_icon": "assets/images/events/26122025/icon_fishpoint.png",
+               "cost": "x 90"
+            },
+            {
+               "title": "Llave de cofre de mascota",
+               "icon": "assets/images/shop-items/PetKeySmall.png",
+               "multiplier": "x2",
+               "chances": "20 restante",
+               "coin_icon": "assets/images/events/26122025/icon_fishpoint.png",
+               "cost": "x 170"
+            },
+            {
+               "title": "Galleta de mascota",
+               "icon": "assets/images/shop-items/PetCookie.png",
+               "multiplier": "x200",
+               "chances": "50 restante",
+               "coin_icon": "assets/images/events/26122025/icon_fishpoint.png",
+               "cost": "x 40"
+            },
+            {
+               "title": "Esencia de energía",
+               "icon": "assets/images/shop-items/Hero_Exp.png",
+               "multiplier": "x200",
+               "chances": "50 restante",
+               "coin_icon": "assets/images/events/26122025/icon_fishpoint.png",
+               "cost": "x 55"
+            },
+            {
+               "title": "Oro",
+               "icon": "assets/images/shop-items/",
+               "multiplier": "x10000",
+               "chances": "25 restante",
+               "coin_icon": "assets/images/events/26122025/icon_fishpoint.png",
+               "cost": "x 55"
+            },
+            {
+               "title": "Billete de operaciones especiales",
+               "icon": "assets/images/shop-items/SpecialOpsTicket.png",
+               "multiplier": "x5",
+               "chances": "10 restante",
+               "coin_icon": "assets/images/events/26122025/icon_fishpoint.png",
+               "cost": "x 260"
+            },
+            {
+               "title": "Fishing Lure",
+               "icon": "assets/images/events/26122025/icon_fishbait.png",
+               "multiplier": "x10",
+               "chances": "1 restante",
+               "coin_icon": "assets/images/events/26122025/icon_fishline.png",
+               "cost": "x 1"
+            },
+            {
+               "title": "Cebo de pescar",
+               "icon": "assets/images/events/26122025/icon_fishbait.png",
+               "multiplier": "x10",
+               "chances": "1 restante",
+               "coin_icon": "assets/images/events/26122025/icon_fishline.png",
+               "cost": "x 1"
+            },
+            {
+               "title": "Fishing Lure",
+               "icon": "assets/images/events/26122025/icon_fishbait.png",
+               "multiplier": "x5",
+               "chances": "4 restante",
+               "coin_icon": "assets/images/events/26122025/icon_fishpoint.png",
+               "cost": "x 350"
+            },
+            {
+               "title": "Caja de mascota excelente",
+               "icon": "assets/images/shop-items/pet_drop_0.png",
+               "multiplier": "x5",
+               "chances": "4 restante",
+               "coin_icon": "assets/images/events/26122025/icon_fishpoint.png",
+               "cost": "x 350"
+            },
          ]
       }
    ]
